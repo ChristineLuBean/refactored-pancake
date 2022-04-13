@@ -10,7 +10,6 @@ let getStock = function () {
       data
         .forEach((stockItem) => {
           i++;
-          //
 
           let stock = document.createElement("li");
           stock.setAttribute("id", `stock${i}`);
