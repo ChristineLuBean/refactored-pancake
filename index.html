@@ -79,9 +79,22 @@
     <div class="row">
       <div class="col-lg-12 col-md-12">
         <div class="latest_newsarea"> <span>Latest News</span>
-          <ul id="ticker01" class="news_sticker">
 
-          </ul>
+            <div id="marquee-cont" class="news_ticker">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="50px" style="background:#1174A8;">
+                    <button id="ticker-title">Posts:</button>
+                  </td>
+                  <td id="marquee">
+                    <marquee onmouseover="this.stop();" onmouseout="this.start();" id='scroll'>
+                    temp <img src="https://www.naishare.com/images/favicon.png" width="25px" />
+                    </marquee>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            
           <div class="social_area">
             <ul class="social_nav">
               <li class="facebook"><a href="#"></a></li>
@@ -400,7 +413,7 @@
               </div>
               <div role="tabpanel" class="tab-pane" id="video">
                 <div class="vide_area">
-                  <iframe width="100%" height="250" src="http://www.youtube.com/embed/h5QWbURNEpA?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                  
                 </div>
               </div>
               <div role="tabpanel" class="tab-pane" id="comments">
